@@ -11,7 +11,8 @@ PASS_DB = int(os.environ.get("PASS_DB", "721"))
 OWNER = int(os.environ.get("OWNER", 6301693754))
 
 LOG = -1002053318391
-try
+
+try:
     ADMINS
     for x in (os.environ.get("ADMINS", "6301693754").split()):
         ADMINS.append(int(x))
